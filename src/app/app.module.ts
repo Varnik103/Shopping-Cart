@@ -8,7 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import {ProductComponent}  from './product/product.component';
 import {CartProductComponent} from './cart-product/cart-product.component';
-import {ProductGridComponent} from './product-grid/product-grid.component'
+import {ProductGridComponent} from './product-grid.component.html/product-grid.component'
 @NgModule({
   imports:      [ BrowserModule, FormsModule,MatIconModule, MatCardModule],
   declarations: [ AppComponent, ProductListComponent, ShoppingCartComponent, ProductComponent, CartProductComponent, ProductGridComponent],

@@ -21,7 +21,6 @@ export class AppComponent  {
   ];
   cartProductList: CartProduct[] = [];
 
-
  addProductToCart(product: { name: any; price: number; num: number; }) {
   const productExistInCart = this.cartProductList.find(({name}) => name === product.name); // find product by name
   if (!productExistInCart) {
@@ -36,13 +35,24 @@ export class AppComponent  {
   }
 
   calcTotal() {
+    this.calcprice();
     return this.cartProductList.length;
+  }
+  calcprice(){
+    // console.log(this.cartProductList);
+    let total = 0;
+    for (const product of this.cartProductList) {
+      // console.log(product);
+      total += product.price;
+    }
+    return total;
   }
 }
 
 
 interface CartProduct {
   name: string;
+  price: number;
   num: number;
   // any other properties that you want to include
 }
