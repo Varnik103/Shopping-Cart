@@ -1,0 +1,20 @@
+
+<div class="section">
+    <div class="icon">
+        <mat-icon (click)="list()">list</mat-icon>
+        <mat-icon (click)="grid()">grid_on</mat-icon>
+    </div>
+    <div class="products" *ngIf="display===true">
+        <div class="tile">
+            <product *ngFor="let product of products" [product]="product" (productAdded)="addProductToCart($event)"></product>
+        </div>
+        <div class="grid">
+
+        </div>
+    </div>
+    <div class="product" *ngIf="display===false">
+        <div class="grid-container">
+            <product-grid  *ngFor="let product of products" [product]="product" (productAdded)="addProductToCart($event)"></product-grid>
+        </div>
+    </div>
+</div>

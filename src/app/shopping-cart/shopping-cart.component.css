@@ -1,0 +1,21 @@
+.heading{
+    margin: 2%;
+    color: rgb(143, 143, 208);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2%;
+    font-size: 17px;
+}
+.head{
+    /* border: 2px solid firebrick; */
+    margin-top: 1%;
+    
+}
+.price{
+    /* border: 2px solid red; */
+    font-size: 25px;
+}

@@ -1,0 +1,29 @@
+<!-- <div class="whole"> -->
+    
+    <div class="list">
+        <div class="img">
+            <img [src] ="product.image" style="width: 150px;height: 140px;">
+        </div>
+        <div class="remain">
+            
+            <!-- <div class="details"> -->
+                <!-- <div class="display"> -->
+                    <div class="two">
+                        <div class="name"><b>{{product.name}}</b></div>
+                        <div class="stock1" *ngIf="product.stock === 'IN STOCK'"
+                        >{{product.stock}}</div>
+                        <div class="stock2" *ngIf="product.stock === 'OUT OF STOCK'"
+                        >{{product.stock}}</div>
+                    </div>
+                    <div class="subtitle">{{product.subtitle}}</div>
+                    <div class="price"><b>&#8377; {{product.price}}</b></div>
+                <!-- </div> -->
+            <!-- </div> -->
+            <div class="btn">
+                <button class="bt1" *ngIf="product.stock === 'IN STOCK'" (click)="addProductToCart(product)"><b>ADD TO CART</b></button>
+                <button class="bt2" *ngIf="product.stock === 'OUT OF STOCK'" disabled="addProductToCart(product)"><b>ADD TO CART</b></button>
+            </div>
+        </div>
+    </div>
+    
+<!-- </div> -->

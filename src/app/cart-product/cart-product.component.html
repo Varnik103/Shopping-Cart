@@ -1,0 +1,13 @@
+<div class="product"  *ngIf="product">
+    <div class="two">
+        <div class="name">{{product.name}}</div>
+        <div class="price">&#8377; {{product.price}}</div>
+    </div>
+    <div class="close" (click)="remove($event)">
+        <mat-icon>close</mat-icon>
+    </div>
+    <!-- <input type="number" [(ngModel)]="product.num" min="0" (ngModelChange)="modelChanged($event)"/> -->
+  </div>
+  <div class="hr">
+
+  </div>

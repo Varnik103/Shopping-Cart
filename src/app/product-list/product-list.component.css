@@ -1,0 +1,33 @@
+/* :host{
+    background-color: #d5d5d5;
+    margin-top: 0;
+    padding-top: 0;
+} */
+.products{
+    background-color: white;
+    margin: 2%;
+    /* border: 2px solid red; */
+}
+.product{
+    /* background-color: white; */
+    display: grid;
+    margin: 2%;
+    margin-left: 3%;
+    /* border: 2px solid red;       */
+}
+.grid-container {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  
+.icon{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2%;
+}
+.icon>mat-icon{
+    margin-right: 1%;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.product{
+    /* border: 2px solid grey; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.two{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    /* border: 2px solid green; */
+    margin: 2%;
+    font-size: 17px;
+}
+
+.close{
+    margin: 2%;
+    cursor: pointer;
+    background-color: #d5d5d5;
+}
+
+.hr{
+    border-top: 1px solid #ccc;
+    border-color: #d5d5d5;
+    margin:  auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 95%;
+}

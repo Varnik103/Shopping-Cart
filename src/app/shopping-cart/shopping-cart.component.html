@@ -1,0 +1,15 @@
+<div class="section">
+    <div class="heading">
+        <h4>YOUR SHOPPING CART</h4>
+    </div>
+    <div class="list" >
+        <cart-product  *ngFor="let product of products"  [product]="product" (productRemoved)="removeProduct($event)" ></cart-product>
+    </div>
+    
+    <div class="total">
+        <div class="head">Total</div>
+        <div class="price" ><b>&#8377; {{price}}</b></div>
+    </div>
+</div>
+
+  
