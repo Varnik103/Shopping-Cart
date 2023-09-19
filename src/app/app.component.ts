@@ -39,7 +39,6 @@ export class AppComponent  {
     return this.cartProductList.length;
   }
   calcprice(){
-    // console.log(this.cartProductList);
     let total = 0;
     for (const product of this.cartProductList) {
       // console.log(product);
